@@ -12,7 +12,7 @@ function getResolveArray(arr){
 function filterData(arr) {
 	return new Promise((resolve,reject)=>{
 		setTimeout(()=>{
-			arr = arr.filter(ele=> ele%2===1);
+			arr = arr.filter(ele=> ele%2===0);
 			resolve(arr);
 		},1000);
 	})
