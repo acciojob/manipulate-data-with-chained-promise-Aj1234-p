@@ -29,12 +29,16 @@ function multiplyData(arr) {
 
 getResolveArray(arr)
 .then(data=>{
+	let temp = data;
+	output.textContent = `${temp.join(" ")}`;
 	return filterData(data);
 })
 .then(data=>{
-	output.textContent = `${data}`;
+	let temp = data;
+	output.textContent = `${temp.join(" ")}`;
 	return multiplyData(data);
 })
 .then(data=>{
-	output.textContent = `${data}`;
+	let temp = data;
+	output.textContent = `${temp.join(" ")}`;
 })
