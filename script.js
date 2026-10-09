@@ -2,7 +2,7 @@ let output = document.querySelector('#output');
 let arr = [1,2,3,4];
 
 function getResolveArray(arr){
-	return new Promise('resolve','reject'=>{
+	return new Promise((resolve,reject)=>{
 		setTimeout(()=>{
 			  resolve(arr);
 		},3000);
@@ -10,7 +10,7 @@ function getResolveArray(arr){
 }
 
 function filterData(arr) {
-	return new Promise('resolve','reject'=>{
+	return new Promise((resolve,reject)=>{
 		setTimeout(()=>{
 			arr = arr.filter(ele=> ele%2===1);
 			resolve(arr);
@@ -19,7 +19,7 @@ function filterData(arr) {
 }
 
 function multiplyData(arr) {
-	return new Promise('resolve','reject'=>{
+	return new Promise((resolve,reject)=>{
 		setTimeout(()=>{
 			arr = arr.map(ele => ele*2);
 			resolve(arr);
